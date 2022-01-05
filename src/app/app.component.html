@@ -5,7 +5,10 @@
 
 <div class="box">
   <a [routerLink]="['/user']">用户模块</a>
-  <a [routerLink]="['/product']">产品模块</a>
+  <!-- 注意： routerLink写法， 如果routeLink加[], 后面的也要加[]
+    下面是： 字符串的写法。 也是ok的。
+  -->
+  <a routerLink="/product">产品模块</a>
 </div>
 
 <router-outlet></router-outlet>
